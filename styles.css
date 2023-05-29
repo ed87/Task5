@@ -27,3 +27,51 @@
       height: auto;
     }
   }
+
+
+  /* Mobile Styles */
+h1 {
+  font-size: 1.5em;
+}
+
+p {
+  font-size: 1em;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Tablet and Desktop Styles */
+@media screen and (min-width: 769px) {
+  /* Grid Container */
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  p {
+    font-size: 1.2em;
+  }
+}
+
+/* Large Desktop Styles */
+@media screen and (min-width: 1200px) {
+  /* Grid Container */
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+
+  p {
+    font-size: 1.4em;
+  }
